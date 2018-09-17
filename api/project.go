@@ -35,7 +35,7 @@ type Project struct {
 	ErrorsURL              string      `json:"errors_url"`
 	EventsURL              string      `json:"events_url"`
 	OpenErrorCount         int         `json:"open_error_count"`
-	CollaboratorsCount     string      `json:"collaborators_count"`
+	CollaboratorsCount     int         `json:"collaborators_count"`
 	CustomEventFieldsUsed  int         `json:"custom_event_fields_used"`
 }
 
