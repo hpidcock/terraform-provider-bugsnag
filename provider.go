@@ -15,7 +15,7 @@ func provider() terraform.ResourceProvider {
 		Schema: map[string]*schema.Schema{
 			"credentials": &schema.Schema{
 				Type:     schema.TypeString,
-				Optional: false,
+				Required: true,
 				DefaultFunc: schema.MultiEnvDefaultFunc([]string{
 					"BUGSNAG_ACCESS_TOKEN",
 				}, nil),
